@@ -1,0 +1,1 @@
+Este directorio debe ser ubicado en el controlador ansible accesible a jenkins

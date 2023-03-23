@@ -1,0 +1,20 @@
+#REQUISITOS
+
+1. Crear un entorno virtual de python3 con virtualenv
+
+virtualenv -p /usr/bin/python3  grafel-webhook
+
+
+2. Iniciarl el entorno virtual
+
+source grafel-webhook/bin/activate
+
+3. Instalar dependencias de python:
+
+
+./install-python-dependencies.sh
+
+
+4. probar ejecutando en modo desarrollo:
+
+python webhook.py

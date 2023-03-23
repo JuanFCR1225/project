@@ -1,0 +1,16 @@
+---
+- name: LIMPIEZA DE SWAP DE HOSTS
+  hosts: target
+  become: true
+  become_user: root
+
+  tasks: 
+      - name: LIMPIANDO CACHES DEL SISTEMA
+        command: sync ; echo 3 > /proc/sys/vm/drop_caches
+
+      - name: PURGANDO SWAP DEL SISTEMA 
+        command: swapoff -a 
+
+      - name: REINICIANDO SWAP DEL SISTEMA 
+        command: swapon -a
+
